@@ -113,6 +113,11 @@ size = Vector3(2.1, 0.5, 2.1)
 
 [node name="Game" type="Node3D" unique_id=593903704]
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=593171815]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.330967, 163.8562, -5.9746904)
+light_energy = 3.535
+shadow_enabled = true
+
 [node name="Baseplate" type="StaticBody3D" parent="." unique_id=817767152]
 
 [node name="Collision" type="CollisionShape3D" parent="Baseplate" unique_id=40399204]
