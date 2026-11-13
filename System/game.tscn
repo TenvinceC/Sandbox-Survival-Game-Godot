@@ -30,6 +30,7 @@
 [ext_resource type="PackedScene" uid="uid://b28s5pwbopplq" path="res://Assets/Structures/table_medium.fbx" id="25_qhut8"]
 [ext_resource type="PackedScene" uid="uid://j32onqcojc85" path="res://Entities/Items/Food/lettuce.tscn" id="26_shayi"]
 [ext_resource type="PackedScene" uid="uid://dblueprint01" path="res://Entities/Static/StructurePlacement/blueprint.tscn" id="27_a0tds"]
+[ext_resource type="PackedScene" uid="uid://cq0w5d87haqdg" path="res://Assets/Structures/adesk.glb" id="31_28reu"]
 
 [sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_skr7w"]
 
@@ -112,11 +113,6 @@ ambient_light_energy = 1.53
 size = Vector3(2.1, 0.5, 2.1)
 
 [node name="Game" type="Node3D" unique_id=593903704]
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=593171815]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.330967, 163.8562, -5.9746904)
-light_energy = 3.535
-shadow_enabled = true
 
 [node name="Baseplate" type="StaticBody3D" parent="." unique_id=817767152]
 
@@ -285,5 +281,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -96.93982, 0.45748404, 1.7415
 
 [node name="Chicken7" parent="." unique_id=1660977432 instance=ExtResource("10_6ilmr")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.9225, 0.45748404, 0.78658295)
+
+[node name="adesk" parent="." unique_id=687104639 instance=ExtResource("31_28reu")]
+transform = Transform3D(0.10029274, 0, 0, 0, 0.10029274, 0, 0, 0, 0.10029274, 10.450181, 1.3031023, 3.0645976)
 
 [connection signal="health_changed" from="Player" to="UI/HPBar" method="_on_player_health_changed"]
